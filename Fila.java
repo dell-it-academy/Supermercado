@@ -2,7 +2,7 @@ public class Fila{
     private Queue<Cliente> fila;
     private int size;
 
-    public File(int size){
+    public Fila(int size){
         fila = new LinkedList<>();
         this.size = size;
     }

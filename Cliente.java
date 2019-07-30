@@ -1,12 +1,17 @@
-public class Cliente extends Pessoa{
+public class Cliente{
     private double valorCompra;
-    private 
+    private int tempoCompra;
+    private Pessoa pessoa;
     
-    Cliente(String nome, int idade, boolean d){
-        super(nome, idade, d);
+    Cliente(Pessoa pessoa){
+        this.pessoa = pessoa;
 
         valorCompra = ((Math.random() * 10 ) * (Math.random() * 10)) + Math.random();
+        tempoCompra = (int) (Math.random() * 10) + 5;
     }
     
     public double valorCompra(){ return valorCompra; }
+    public double tempoCompra(){ return tempoCompra; }
+    public Pessoa getPessoa(){ return pessoa; }
+    
 }
